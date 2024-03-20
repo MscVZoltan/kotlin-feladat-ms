@@ -15,8 +15,9 @@ dependencies {
     implementation(platform(org.springframework.boot.gradle.plugin.SpringBootPlugin.BOM_COORDINATES))
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+    implementation("com.squareup.okhttp3:okhttp:3.2.0")
     testImplementation(kotlin("test"))
-    testImplementation("io.mockk:mockk:1.4.1")
+    testImplementation("org.mockito:mockito-core:5.11.0")
 }
 
 tasks.test {
